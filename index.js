@@ -81,7 +81,6 @@ function gameLoop(draw) {
 let gameLoopInterval = false;
 
 function startLoop(draw) {
-    console.log(gameLoopInterval);
     if (!gameLoopInterval) {
         gameLoopInterval = window.setInterval(gameLoop.bind(null, draw), 100);
     }
