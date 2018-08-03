@@ -9,6 +9,7 @@ const wood = new Resource('wood');
 const fire = new Resource('fire');
 const heat = new Resource('heat');
 const water = new Resource('water');
+const soup = new Resource('soup');
 
 time.update = function() {
     time.quantity++;
@@ -63,6 +64,13 @@ function makeFire() {
     fire.quantity += 1;
 }
 
+function makeSoup() {
+    if (heat.quantity >= 100 && water.quantity >= 3) {
+        water.quantity -= 3;
+        soup.quantity += 1;
+    }
+}
+
 function gameLoop(draw) {
     update();
     draw();
@@ -99,6 +107,7 @@ window.onload = function(){
     const elFire = new ResourceEl('fire', fire);
     const elHeat = new ResourceEl('heat', heat);
     const elWater = new ResourceEl('water', water);
+    const elSoup = new ResourceEl('soup', soup);
 
     function draw() {
         elTime.draw();
@@ -107,6 +116,7 @@ window.onload = function(){
         elFire.draw();
         elHeat.draw();
         elWater.draw();
+        elSoup.draw();
     }
 
     const elStartButton = document.getElementById('start');
@@ -119,6 +129,9 @@ window.onload = function(){
 
     const elMakeFireButton = document.querySelector('#fire button.make');
     elMakeFireButton.addEventListener('click', makeFire);
+
+    const elMakeSoupButton = document.querySelector('#soup button.make');
+    elMakeSoupButton.addEventListener('click', makeSoup);
 
     draw();
 };
