@@ -38,7 +38,7 @@
                 font-size: 64px;
                 text-align: center;
             }
-            .resource-container button {
+            .resource-container .buttons {
                 bottom: 8px;
                 position: absolute;
             }
@@ -49,19 +49,21 @@
     </head>
     <body>
         <div id="game">
-            <div>
-                <button id="start">Start</button>
-                <button id="pause">Pause</button>
-            </div>
             <div id="resources">
                 <div id="time" class="resource-container">
                     <div class="title">Time</div>
                     <div class="quantity"></div>
+                    <div class="buttons">
+                        <button id="start">Start</button>
+                        <button id="pause">Pause</button>
+                    </div>
                 </div>
                 <div id="trees" class="resource-container">
                     <div class="title">Trees</div>
                     <div class="quantity"></div>
-                    <button class="take">Chop</button>
+                    <div class="buttons">
+                        <button class="take">Chop</button>
+                    </div>
                 </div>
                 <div id="wood" class="resource-container">
                     <div class="title">Wood</div>
@@ -70,7 +72,9 @@
                 <div id="fire" class="resource-container">
                     <div class="title">Fire</div>
                     <div class="quantity"></div>
-                    <button class="make">Make</button>
+                    <div class="buttons">
+                        <button class="make">Make</button>
+                    </div>
                 </div>
                 <div id="heat" class="resource-container">
                     <div class="title">Heat</div>

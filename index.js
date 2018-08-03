@@ -94,10 +94,10 @@ window.onload = function(){
     const elPauseButton = document.getElementById('pause');
     elPauseButton.addEventListener('click', pauseLoop);
 
-    const elTakeTreesButton = document.querySelector('#trees > button.take');
+    const elTakeTreesButton = document.querySelector('#trees button.take');
     elTakeTreesButton.addEventListener('click', chopTrees);
 
-    const elMakeFireButton = document.querySelector('#fire > button.make');
+    const elMakeFireButton = document.querySelector('#fire button.make');
     elMakeFireButton.addEventListener('click', makeFire);
 
     draw();
