@@ -15,14 +15,16 @@ time.update = function() {
     time.quantity++;
 };
 trees.update = function() {
-    if (time.quantity % 10 == 0) {
+    if (heat.quantity >= 356) {
+        trees.quantity = 0;
+    } else if (time.quantity % 10 == 0) {
         trees.quantity += 1;
     }
 };
 fire.update = function() {
     if (fire.quantity >= 1 && time.quantity % 20 == 0) {
         fire.quantity -= 1;
-        heat.quantity += 2;
+        heat.quantity += Math.max(1, Math.floor(fire.quantity/10));
     }
 };
 heat.update = function() {
