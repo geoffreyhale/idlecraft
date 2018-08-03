@@ -78,14 +78,18 @@ function gameLoop(draw) {
     draw();
 }
 
-let gameLoopInterval;
+let gameLoopInterval = false;
 
 function startLoop(draw) {
-    gameLoopInterval = window.setInterval(gameLoop.bind(null, draw), 100);
+    console.log(gameLoopInterval);
+    if (!gameLoopInterval) {
+        gameLoopInterval = window.setInterval(gameLoop.bind(null, draw), 100);
+    }
 }
 
 function pauseLoop() {
     clearInterval(gameLoopInterval);
+    gameLoopInterval = false;
 }
 
 function ResourceEl(domId, resource) {
