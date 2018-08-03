@@ -1,0 +1,3 @@
+# IdleCraft
+
+javascript game
