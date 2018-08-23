@@ -1,6 +1,8 @@
-import Game from './components/Game';
+import Game from './game/components/Game';
+import View from './view/index.jsx';
 
 const game = new Game();
+const view = new View();
 
 function gameLoop(draw) {
     game.update();
@@ -35,6 +37,8 @@ function ResourceEl(domId, resource) {
 }
 
 window.onload = function(){
+    view.render();
+
     const elTime = new ResourceEl('time', game.time);
     const elTrees = new ResourceEl('trees', game.trees);
     const elWood = new ResourceEl('wood', game.wood);

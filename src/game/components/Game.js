@@ -1,6 +1,6 @@
 import Resource from './Resource';
 
-class Game {
+export default class Game {
     constructor() {
         this.time = new Resource('time');
         this.trees = new Resource('trees');
@@ -65,5 +65,3 @@ class Game {
         }
     }
 }
-
-export default Game;

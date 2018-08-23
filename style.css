@@ -2,32 +2,32 @@
     font-family: 'Comfortaa', sans-serif;
 }
 #time {
-    background-image: linear-gradient(rgba(250,250,250,.9),rgba(250,250,250,.4)),url('./img/time.jpg');
+    background-image: linear-gradient(rgba(250,250,250,.9),rgba(250,250,250,.4)),url('src/img/time.jpg');
     background-size: 220px;
 }
 #trees {
-    background-image: linear-gradient(rgba(250,250,250,.9),rgba(250,250,250,.4)),url('./img/trees.jpg');
+    background-image: linear-gradient(rgba(250,250,250,.9),rgba(250,250,250,.4)),url('src/img/trees.jpg');
     background-size: 128px;
 }
 #wood {
-    background-image: linear-gradient(rgba(250,250,250,.9),rgba(250,250,250,.4)),url('./img/wood.jpeg');
+    background-image: linear-gradient(rgba(250,250,250,.9),rgba(250,250,250,.4)),url('src/img/wood.jpeg');
     background-size: 220px;
 }
 #fire {
-    background-image: linear-gradient(rgba(250,250,250,.9),rgba(250,250,250,.4)),url('./img/fire.jpeg');
+    background-image: linear-gradient(rgba(250,250,250,.9),rgba(250,250,250,.4)),url('src/img/fire.jpeg');
     background-position: bottom;
     background-size: 128px;
 }
 #heat {
-    background-image: linear-gradient(rgba(250,250,250,.9),rgba(250,250,250,.4)),url('./img/heat.jpg');
+    background-image: linear-gradient(rgba(250,250,250,.9),rgba(250,250,250,.4)),url('src/img/heat.jpg');
     background-size: 230px;
 }
 #water {
-    background-image: linear-gradient(rgba(250,250,250,.9),rgba(250,250,250,.4)),url('./img/water.jpg');
+    background-image: linear-gradient(rgba(250,250,250,.9),rgba(250,250,250,.4)),url('src/img/water.jpg');
     background-size: 240px;
 }
 #soup {
-    background-image: linear-gradient(rgba(250,250,250,.9),rgba(250,250,250,.4)),url('./img/soup.jpg');
+    background-image: linear-gradient(rgba(250,250,250,.9),rgba(250,250,250,.4)),url('src/img/soup.jpg');
     background-size: 240px;
 }
 .resource-container {
